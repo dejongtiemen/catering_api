@@ -50,7 +50,7 @@ class Db implements IDb {
     public function executeQuery(string $query, array $bind = []): bool {
         $this->stmt = $this->connection->prepare($query);
         if ($bind) {
-            return $this->stmt->execute($bind);
+            return $this->stmt->execute($bind); 
         }
         return $this->stmt->execute();
     }
