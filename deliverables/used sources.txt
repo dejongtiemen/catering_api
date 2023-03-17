@@ -1,0 +1,5 @@
+https://www.phpzag.com/how-to-create-simple-rest-api-in-php/
+https://www.softwaretestinghelp.com/json-tutorial/
+https://restfulapi.net/http-status-codes/
+https://www.w3schools.com/mysql/
+https://www.javatpoint.com/sql-select-from-multiple-tables

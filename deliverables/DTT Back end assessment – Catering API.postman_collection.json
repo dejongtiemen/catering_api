@@ -1,0 +1,1641 @@
+{
+	"info": {
+		"_postman_id": "ee63ad53-a24a-4667-98bf-88492367115b",
+		"name": "DTT Back end assessment – Catering API",
+		"description": "The Postman collection for the DTT backend assessment test: Catering API.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26320139"
+	},
+	"item": [
+		{
+			"name": "Test API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/test",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"test"
+					]
+				},
+				"description": "API call used to test local development environment and database connection.\n\nShould print _'Hello World!'_ if all is OK."
+			},
+			"response": []
+		},
+		{
+			"name": "Create facility (TODO)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\" : \"gouda catering\",\r\n\"location_ID\" : 2\r\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/createfacility",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"createfacility"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Creates a facility..."
+			},
+			"response": [
+				{
+					"name": "Create facility (TODO)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\" : \"rotjeknor catering\",\r\n\"facility_city\" : \"Rotterdam\",\r\n\"facility_address\" : \"maasboulevard 5\",\r\n\"facility_zip_code\" : \"0010 xa\",\r\n\"facility_country_code\" : 31,\r\n\"phone_number\" : 87589347523,\r\n\"tags\" : [\"tag1\", \"tag2\"]\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/createfacility",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"createfacility"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 14 Mar 2023 16:48:45 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.2.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Methods, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "251"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Item was created.\"\n}"
+				},
+				{
+					"name": "Create facility (TODO)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\" : \"rotjeknor catering\",\r\n\"facility_city\" : \"Rotterdam\",\r\n\"facility_address\" : \"maasboulevard 5\",\r\n\"facility_zip_code\" : \"0010 xa\",\r\n\"facility_country_code\" : 31,\r\n\"phone_number\" : 87589347523\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/createfacility",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"createfacility"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 15 Mar 2023 12:13:41 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.2.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Methods, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "471"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Item is created\"\n}"
+				},
+				{
+					"name": "Create facility (TODO)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\" : \"rotjeknor catering\",\r\n\"location_ID\" : 1\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/createfacility",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"createfacility"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 14:06:05 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.2.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Methods, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "471"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Item is created\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Read facility",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\" : [\"gouda catering\", \"rotjeknor catering\"]\r\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/readfacility",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"readfacility"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\" : \"mokum catering\"\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/readfacility",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"readfacility"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 14 Mar 2023 15:51:20 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.2.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Methods, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "397"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"mokum catering\",\n    \"creation_date\": \"2023-03-14\",\n    \"facility_city\": \"Amsterdam\",\n    \"facility_address\": \"hondenstraat 6\",\n    \"facility_zip_code\": \"1234 xs\",\n    \"facility_country_code\": 31\n}"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\" : [\"mokum catering\", \"rotjeknor catering\"]\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/readfacility",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"readfacility"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 14 Mar 2023 17:36:27 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.2.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Methods, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "579"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "<br />\n<b>Deprecated</b>:  Creation of dynamic property App\\Controllers\\FacilityController::$db is deprecated in <b>C:\\xampp\\htdocs\\web_backend_test_catering_api\\App\\Plugins\\Di\\Injectable.php</b> on line <b>30</b><br />\n[{\"name\":\"mokum catering\",\"creation_date\":\"2023-03-14\",\"facility_city\":\"Amsterdam\",\"facility_address\":\"hondenstraat 6\",\"facility_zip_code\":\"1234 xs\",\"facility_country_code\":31}][{\"name\":\"rotjeknor catering\",\"creation_date\":\"2023-03-14\",\"facility_city\":\"Rotterdam\",\"facility_address\":\"maasboulevard 5\",\"facility_zip_code\":\"0010 xa\",\"facility_country_code\":31}]"
+				},
+				{
+					"name": "Read facility",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\" : [\"mokum catering\", \"rotjeknor catering\"]\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/readfacility",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"readfacility"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 15:35:33 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.2.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Methods, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "896"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"rotjeknor catering\",\n        \"creation_date\": \"2023-03-16\",\n        \"address\": \"maasboulevard 5\",\n        \"city\": \"Rotterdam\",\n        \"country_code\": 31,\n        \"zip_code\": \"0010 xa\",\n        \"phone_number\": 2147483647,\n        \"tag_name\": null\n    }\n]"
+				},
+				{
+					"name": "Read facility",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\" : [\"gouda catering\", \"rotjeknor catering\"]\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/readfacility",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"readfacility"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 16:01:18 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.2.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Methods, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1042"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "<br />\n<b>Deprecated</b>:  Creation of dynamic property App\\Controllers\\FacilityController::$db is deprecated in <b>C:\\xampp\\htdocs\\web_backend_test_catering_api\\App\\Plugins\\Di\\Injectable.php</b> on line <b>30</b><br />\n<br />\n<b>Deprecated</b>:  Creation of dynamic property App\\Plugins\\Http\\Response\\Ok::$message is deprecated in <b>C:\\xampp\\htdocs\\web_backend_test_catering_api\\App\\Plugins\\Http\\Status.php</b> on line <b>35</b><br />\n{\"message\":[{\"name\":\"gouda catering\",\"creation_date\":\"2023-03-16\",\"address\":\"kaaslaan 12\",\"city\":\"Gouda\",\"country_code\":31,\"zip_code\":\"1234 xp\",\"phone_number\":2147483647,\"tag_name\":null}]}<br />\n<b>Deprecated</b>:  Creation of dynamic property App\\Plugins\\Http\\Response\\Ok::$message is deprecated in <b>C:\\xampp\\htdocs\\web_backend_test_catering_api\\App\\Plugins\\Http\\Status.php</b> on line <b>35</b><br />\n{\"message\":[{\"name\":\"rotjeknor catering\",\"creation_date\":\"2023-03-16\",\"address\":\"maasboulevard 5\",\"city\":\"Rotterdam\",\"country_code\":31,\"zip_code\":\"0010 xa\",\"phone_number\":2147483647,\"tag_name\":null}]}"
+				}
+			]
+		},
+		{
+			"name": "Delete facility",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"rotjeknor catering\"\r\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/deletefacility",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"deletefacility"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete facility",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"rotjeknor catering\"\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/deletefacility",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"deletefacility"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 14 Mar 2023 17:17:54 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.2.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Methods, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "251"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Item was deleted.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update facility name",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"facility_name\" : \"damsko catering\",\r\n    \"updated_facility_name\" : \"rotjeknor catering\"\r\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/updatefacilityname",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"updatefacilityname"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"facility_name\" : \"mokum catering\",\r\n    \"updated_facility_name\" : \"damsko catering\"\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/updatefacilityname",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"updatefacilityname"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 15 Mar 2023 09:55:34 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.2.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Methods, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "251"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Facility updated.\"\n}"
+				},
+				{
+					"name": "Update facility name",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"facility_name\" : \"rotjeknor catering\",\r\n    \"updated_facility_name\" : \"damsko catering\"\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/updatefacilityname",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"updatefacilityname"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 15 Mar 2023 13:54:58 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.2.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Methods, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "480"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Facility name is updated\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update facility creation date",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"facility_name\" : \"damsko catering\",\r\n    \"creation_date\" : \"2023-03-15\"\r\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/updatefacilitycreationdate",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"updatefacilitycreationdate"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update facility creation date",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"facility_name\" : \"damsko catering\",\r\n    \"creation_date\" : \"2023-03-15\"\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/updatefacilitycreationdate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"updatefacilitycreationdate"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 15 Mar 2023 10:01:25 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.2.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Methods, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "265"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Facility creation date updated.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete facility tag",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tag_name\" : \"tag3\",\r\n    \"facility_ID\" : 8\r\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}//deletefacilitytag",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"",
+						"deletefacilitytag"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete facility tag",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tag_name\" : \"tag3\",\r\n    \"facility_name\" : \"damsko catering\"\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}//deletefacilitytag",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"",
+								"deletefacilitytag"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 15 Mar 2023 10:20:29 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.2.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Methods, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "260"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Facility tag date updated.\"\n}"
+				},
+				{
+					"name": "Delete facility tag",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tag_name\" : \"tag3\",\r\n    \"facility_ID\" : 8\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}//deletefacilitytag",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"",
+								"deletefacilitytag"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 18:06:33 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.2.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Methods, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "471"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Deleted facility tag\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create facility tag",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"rotjeknor catering\",\r\n    \"tag_name\" : \"tag3\"\r\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/createfacilitytag",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"createfacilitytag"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create facility tag",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"rotjeknor catering\",\r\n    \"tag_name\" : \"tag3\"\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/createfacilitytag",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"createfacilitytag"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 18:03:25 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.2.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Methods, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "471"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Item is created\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Search facility",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"facility_name\" : \"o\",\r\n    \"tag_name\" : \"\",\r\n    \"location_city\" : \"\"\r\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/searchfacility",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"searchfacility"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search facility",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"facility_name\" : \"o\",\r\n    \"tag_name\" : \"\",\r\n    \"location_city\" : \"\"\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/searchfacility",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"searchfacility"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 17:03:09 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.2.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Methods, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "812"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": [\n        {\n            \"name\": \"rotjeknor catering\",\n            \"creation_date\": \"2023-03-16\",\n            \"address\": \"maasboulevard 5\",\n            \"city\": \"Rotterdam\",\n            \"country_code\": 31,\n            \"zip_code\": \"0010 xa\",\n            \"phone_number\": 2147483647,\n            \"tag_name\": null\n        },\n        {\n            \"name\": \"gouda catering\",\n            \"creation_date\": \"2023-03-16\",\n            \"address\": \"kaaslaan 12\",\n            \"city\": \"Gouda\",\n            \"country_code\": 31,\n            \"zip_code\": \"1234 xp\",\n            \"phone_number\": 2147483647,\n            \"tag_name\": null\n        }\n    ]\n}"
+				},
+				{
+					"name": "Search facility",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"facility_name\" : \"j\",\r\n    \"tag_name\" : \"\",\r\n    \"location_city\" : \"\"\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/searchfacility",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"searchfacility"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 17:04:35 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.2.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Methods, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "637"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": [\n        {\n            \"name\": \"rotjeknor catering\",\n            \"creation_date\": \"2023-03-16\",\n            \"address\": \"maasboulevard 5\",\n            \"city\": \"Rotterdam\",\n            \"country_code\": 31,\n            \"zip_code\": \"0010 xa\",\n            \"phone_number\": 2147483647,\n            \"tag_name\": null\n        }\n    ]\n}"
+				},
+				{
+					"name": "Search facility",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"facility_name\" : \"\",\r\n    \"tag_name\" : \"\",\r\n    \"location_city\" : \"\"\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/searchfacility",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"searchfacility"
+							]
+						}
+					},
+					"status": "Bad request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 17:04:56 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.2.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Methods, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "266"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Failed to search a facility\"\n}"
+				},
+				{
+					"name": "Search facility",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"facility_name\" : \"catering\",\r\n    \"tag_name\" : \"\",\r\n    \"location_city\" : \"\"\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/searchfacility",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"searchfacility"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 17:05:17 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.2.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Methods, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "812"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": [\n        {\n            \"name\": \"rotjeknor catering\",\n            \"creation_date\": \"2023-03-16\",\n            \"address\": \"maasboulevard 5\",\n            \"city\": \"Rotterdam\",\n            \"country_code\": 31,\n            \"zip_code\": \"0010 xa\",\n            \"phone_number\": 2147483647,\n            \"tag_name\": null\n        },\n        {\n            \"name\": \"gouda catering\",\n            \"creation_date\": \"2023-03-16\",\n            \"address\": \"kaaslaan 12\",\n            \"city\": \"Gouda\",\n            \"country_code\": 31,\n            \"zip_code\": \"1234 xp\",\n            \"phone_number\": 2147483647,\n            \"tag_name\": null\n        }\n    ]\n}"
+				},
+				{
+					"name": "Search facility",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"facility_name\" : \"catering\",\r\n    \"tag_name\" : \"\",\r\n    \"location_city\" : \"gouda\"\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/searchfacility",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"searchfacility"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 17:05:42 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.2.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Methods, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "625"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": [\n        {\n            \"name\": \"gouda catering\",\n            \"creation_date\": \"2023-03-16\",\n            \"address\": \"kaaslaan 12\",\n            \"city\": \"Gouda\",\n            \"country_code\": 31,\n            \"zip_code\": \"1234 xp\",\n            \"phone_number\": 2147483647,\n            \"tag_name\": null\n        }\n    ]\n}"
+				},
+				{
+					"name": "Search facility",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"facility_name\" : \"catering\",\r\n    \"tag_name\" : \"\",\r\n    \"location_city\" : \"o\"\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/searchfacility",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"searchfacility"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 17:06:05 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.2.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Methods, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "812"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": [\n        {\n            \"name\": \"rotjeknor catering\",\n            \"creation_date\": \"2023-03-16\",\n            \"address\": \"maasboulevard 5\",\n            \"city\": \"Rotterdam\",\n            \"country_code\": 31,\n            \"zip_code\": \"0010 xa\",\n            \"phone_number\": 2147483647,\n            \"tag_name\": null\n        },\n        {\n            \"name\": \"gouda catering\",\n            \"creation_date\": \"2023-03-16\",\n            \"address\": \"kaaslaan 12\",\n            \"city\": \"Gouda\",\n            \"country_code\": 31,\n            \"zip_code\": \"1234 xp\",\n            \"phone_number\": 2147483647,\n            \"tag_name\": null\n        }\n    ]\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost/web_backend_test_catering_api",
+			"type": "string"
+		}
+	]
+}
